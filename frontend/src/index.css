@@ -1,0 +1,194 @@
+/* Reset basic elements */
+body, h1, h2, ul, li, form, input, button, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Set the body background and font color */
+body {
+  background-color: #ebe8e8;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(8, 158, 228);
+  border-radius: 8px;
+ 
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fdfcfc;
+}
+
+/* navbar */
+nav {
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(8, 158, 228);
+}
+
+nav ul li {
+  margin: 0 10px;
+  background-color: rgb(8, 158, 228);
+
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  background-color: rgb(8, 158, 228);
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input[type="number"],
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Expense list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
+li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+/* Chart */
+.chart-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-height: 1800px;
+  max-width: 1800px;
+  min-width: 500px;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chartButton {
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  background-color:rgb(8, 158, 228);
+}
+
+.chartImage {
+  max-width: 150px;
+  max-height: 20px;
+
+}
+
+table.expenseList {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
+table.expenseList tr {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+table.expenseList tr td {
+  width: 15%;
+}
+
+table.expenseList tr td button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+table.expenseList tr td button:hover {
+  background-color: #c82333;
+}
