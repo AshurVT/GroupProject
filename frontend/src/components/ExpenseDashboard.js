@@ -3,6 +3,7 @@ import { getExpenses } from '../services/expenseService';
 import ExpenseForm from './ExpenseForm';
 import ExpenseList from './ExpenseList';
 import ExpenseChart from './ExpenseChart';
+import ExpenseSummary from './ExpenseSummary';
 
 const ExpenseDashboard = () => {
   const [expenses, setExpenses] = useState([]);
@@ -24,7 +25,7 @@ const ExpenseDashboard = () => {
 
   return (
     <div className="container">
-      <h2>Expense Dashboard</h2>
+    
       {error ? (
         <p>Error: {error}</p>
       ) : (
@@ -32,6 +33,7 @@ const ExpenseDashboard = () => {
           <ExpenseChart expenses={expenses} />
           <ExpenseList expenses={expenses} setExpenses={setExpenses} />
           <ExpenseForm setExpenses={setExpenses} />
+          <ExpenseSummary expenses={expenses} />
         </div>
       )}
     </div>

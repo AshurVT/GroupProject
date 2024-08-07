@@ -151,6 +151,16 @@ li button:hover {
   background-color:rgb(8, 158, 228);
 }
 
+.summaryButton {
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  background-color:rgb(8, 158, 228);
+}
+
 .chartImage {
   max-width: 150px;
   max-height: 20px;

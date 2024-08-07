@@ -54,7 +54,7 @@ const ExpenseList = ({ expenses, setExpenses }) => {
     //popovers for editing expense data
     //second part is the expense list
     //difficulty in editing, was solved by finding methods which helped modify the data that was already loaded as well as modify the database
-    //difficulty in getting categorical graphing was solved by creating two lists one of just the name and then one that holds the data in it
+
     return (
         <div>
             <div popover="auto" id="editbox">
